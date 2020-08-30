@@ -32,7 +32,6 @@ Each script will process all of the files in the current directory. To isolate t
 
 `cd mytake.0010.hero.take.001/`
 
-`mkdir HERO_030422250448`
 `mkdir HERO_############`
 
 `cp ############-*.raw HERO_############/`
