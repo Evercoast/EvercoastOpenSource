@@ -30,7 +30,7 @@ Convert images in a take folder to .PNG for viewing.
 
 Each script will process all of the files in the current directory. To isolate the a hero camera, or a subset of the camera's you're intereseted, in make a folder off of your take directory and copy them into it, e.g. (where `############` is the 12-digit device serial number):
 
-`cd mytake.0010.hero.take.002`
+`cd mytake.0010.hero.take.001`
 
 `mkdir HERO_030422250448`
 `mkdir HERO_############`
@@ -40,6 +40,10 @@ Each script will process all of the files in the current directory. To isolate t
 `cd HERO_############`
 
 `ec-convert-raw-color-1280x720.sh`
+
+**Note:**
+
+Depending on your GIT client, you may need to `chmod +x` the above scripts.
 
 ## Viewing images
 
