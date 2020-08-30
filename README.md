@@ -35,9 +35,9 @@ Each script will process all of the files in the current directory. To isolate t
 `mkdir HERO_030422250448`
 `mkdir HERO_############`
 
-`cp ############-*.raw HERO_############`
+`cp ############-*.raw HERO_############/`
 
-`cd HERO_############`
+`cd HERO_############/`
 
 `ec-convert-raw-color-1280x720.sh`
 
