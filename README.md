@@ -44,7 +44,7 @@ Each script will process all of the files in the current directory. To isolate t
 
 Depending on your GIT client, you may need to `chmod +x` the above scripts.
 
-## Viewing images
+## Viewing Images
 
 We recommend DJV as a free to use review tool, which is provided under a BSD-style license.
 
