@@ -65,11 +65,13 @@ First, Use the above RAW conversion scripts to convert RAW files to PNG.
 
 Where:
 
-`ec-parallel-montage` runs the `ec-montage.sh` scripts in parallel for frames `1` to `100` with an increment of `2`.
+`ec-parallel-montage` runs the `ec-montage.sh` script in parallel for frames `1` to `100` with an increment of `2`.
 
-`ec-montage.sh` is a wrapper script around the montage command, where `10x2` is the desired tiling and `50` is the scaling applied to the final image.
+`ec-montage.sh` is a wrapper script around the `montage` command, where `10x2` is the desired tiling and `50` is the scaling applied to the final image.
 
 **Example Output:**
+
+![diagram](documentation/contact.0000327.png)
 
 ## Viewing Images
 
