@@ -65,6 +65,8 @@ Create NxM tiled contact sheets in parallel.
 
 First, Use the above RAW conversion scripts to convert RAW files to PNG.
 
+Then,
+
 `ec-parallel-montage.sh 1 2 100 ec-montage.sh 10x2 50`
 
 Where:
