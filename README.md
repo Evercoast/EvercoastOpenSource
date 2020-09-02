@@ -24,15 +24,15 @@ Depending on your GIT client, you may need to `chmod +x` the BASH scripts descri
 
 **Scripts:**
 
-`ec-convert-raw-color-1280x720.sh`
+`ec-convert-raw-color-1280x720.sh` (D415)
 
-`ec-convert-raw-color-1280x800.sh`
+`ec-convert-raw-color-1280x800.sh` (D455)
 
-`ec-convert-raw-depth-1280x720.sh`
+`ec-convert-raw-depth-1280x720.sh` (D415 | D455)
 
 **Purpose:**
 
-Convert images in a take folder to .PNG for viewing in parallel.
+Convert RAW images in a take folder to PNG for viewing in parallel.
 
 **Usage:**
 
@@ -59,19 +59,27 @@ Each script will process all of the files in the current directory. To isolate t
 
 **Purpose:**
 
-Create a NxM contact sheets in parallel.
+Create MxN tiled contact sheets in parallel.
 
 **Usage:**
 
 First, Use the above RAW conversion scripts to convert RAW files to PNG.
 
+Then,
+
 `ec-parallel-montage.sh 1 2 100 ec-montage.sh 10x2 50`
 
 Where:
 
-`ec-parallel-montage` runs the `ec-montage.sh` script in parallel for frames `1` to `100` with an increment of `2`.
+`ec-parallel-montage.sh` runs the `ec-montage.sh` script in parallel for frames `1` to `100` with an increment of `2`.
 
 `ec-montage.sh` is a wrapper script around the `montage` command, where `10x2` is the desired tiling and `50` is the scaling applied to the final image.
+
+Note:
+
+Depending on your where you've cloned `EvercoastOpenSource`, and whether that path is in your shell environment's $PATH variable, both `ec-parallel-montage.sh` and `ec-montage.sh` may need to prefaced by their concrete or relative paths, e.g.:
+
+`~/EvercoastOpenSource/ec-parallel-montage.sh 1 2 100 ~/EvercoastOpenSource/ec-montage.sh 10x2 50`
 
 **Example Output:**
 
