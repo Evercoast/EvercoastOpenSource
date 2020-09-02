@@ -12,6 +12,10 @@ To silence the citation banner:
 
 `parallel --bibtex will cite`
 
+**Montage:**
+
+`sudo apt-get install -y montage`
+
 **Note:**
 
 Depending on your GIT client, you may need to `chmod +x` the BASH scripts described herein.
@@ -47,7 +51,7 @@ Each script will process all of the files in the current directory. To isolate t
 
 ## Making Contact Sheets
 
-## Scripts:
+**Scripts:**
 
 `ec-parallel-montage.sh`
 
