@@ -59,7 +59,7 @@ Each script will process all of the files in the current directory. To isolate t
 
 **Purpose:**
 
-Create a NxM contact sheets in parallel.
+Create NxM tiled contact sheets in parallel.
 
 **Usage:**
 
