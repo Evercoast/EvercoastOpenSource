@@ -71,9 +71,15 @@ Then,
 
 Where:
 
-`ec-parallel-montage` runs the `ec-montage.sh` script in parallel for frames `1` to `100` with an increment of `2`.
+`ec-parallel-montage.sh` runs the `ec-montage.sh` script in parallel for frames `1` to `100` with an increment of `2`.
 
 `ec-montage.sh` is a wrapper script around the `montage` command, where `10x2` is the desired tiling and `50` is the scaling applied to the final image.
+
+Note:
+
+Depending on your where you've cloned `EvercoastOpenSource`, and whether that path is in your shell environment's $PATH variable, both `ec-parallel-montage.sh` and `ec-montage.sh` may need to prefaced by their concrete or relative paths, e.g.
+
+`~/EvercoastOpenSource/ec-parallel-montage.sh 1 2 100 ~/EvercoastOpenSource/ec-montage.sh 10x2 50`
 
 **Example Output:**
 
