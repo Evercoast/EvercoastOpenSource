@@ -32,7 +32,7 @@ Depending on your GIT client, you may need to `chmod +x` the BASH scripts descri
 
 **Purpose:**
 
-Convert images in a take folder to .PNG for viewing in parallel.
+Convert RAW images in a take folder to PNG for viewing in parallel.
 
 **Usage:**
 
