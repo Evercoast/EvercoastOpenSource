@@ -14,7 +14,7 @@ To silence the citation banner:
 
 **Montage:**
 
-`sudo apt-get install -y montage`
+`sudo apt-get install montage`
 
 **Note:**
 
