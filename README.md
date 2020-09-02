@@ -24,11 +24,11 @@ Depending on your GIT client, you may need to `chmod +x` the BASH scripts descri
 
 **Scripts:**
 
-`ec-convert-raw-color-1280x720.sh`
+`ec-convert-raw-color-1280x720.sh` (D415)
 
-`ec-convert-raw-color-1280x800.sh`
+`ec-convert-raw-color-1280x800.sh` (D455)
 
-`ec-convert-raw-depth-1280x720.sh`
+`ec-convert-raw-depth-1280x720.sh` (D415 | D455)
 
 **Purpose:**
 
