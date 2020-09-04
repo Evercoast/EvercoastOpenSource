@@ -112,7 +112,7 @@ A variety of playback controller scripts.
 
 ## Fundamentals:
 
-**Time in Unity:**
+**Time In Unity:**
 
 Time in Unity is both plural (elapsed time, animation time, physics time, etc.) and non-linear. These times can scale internal to Unity to maintain frame-rate, deal with complex physics, or other many factors.
 
@@ -127,3 +127,40 @@ Use refer to the above RAW Conversion section and use the Contact Sheet process 
 In the end you'll have an image with the frame #'s burned into the bottom of the image place, as so:
 
 ![diagram](documentation/contact.0000284.png)
+
+## Synchronizing Audio in Adobe Premiere
+
+**Note:**
+
+If you have not recorded an audio track for your volumetric content, this process is still essential. Please substitute any other MP3.
+
+**Open The Image Sequence:**
+
+In your project in Premiere select Open, then use the file browser to locate the first frame of the image sequence of the contact sheets. Please ensure that "Image Sequence" is pressed in the lower left on the browser before pressing OK.
+
+**Adjust The Image Sequence's FPS:**
+
+Right click on the source audio and follow the “Modify Clip / Interpret Footage” menu. Set the FPS of the clip to the FPS used at record time in Mavericks.
+
+![diagram](documentation/premiere_interpret_footage.png)
+
+This must be done before setting any markers, or syncing tracks.
+
+**Sync The Audio:**
+
+If you're synchronizing an audio track, line it up in Premiere.
+
+**Cut The Track:**
+
+Use the Cut Tool to trim any extra frames off of the beginning or end of the clip, so that you have your final editorial cut.
+
+![diagram](documentation/premiere_cut.png)
+
+**Export An Audio File:**
+
+Export a WAV file. On the export dialog reset the timecode to 00:00:00.
+
+
+**Cutting The OBJ Sequence:**
+
+The labels that are burned into the bottom of each contact sheet frame are 1:1 to the OBJ sequence files. From here trim your OBJ sequence to exactly what is used in your editorial in Premiere.
