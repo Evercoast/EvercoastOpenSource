@@ -96,3 +96,34 @@ If you receive contact sheets of the form `contact.0000235-0.png`, it indicates 
 We recommend DJV as a free to use review tool, which is provided under a BSD-style license.
 
 Download DJV [HERE](https://darbyjohnston.github.io/DJV/download.html).
+
+# Unity
+
+C# Editor and Playback scripts for OBJ sequences for playback in Unity.
+
+## Types of Scripts:
+**Editor Scripts:**
+
+Editor scripts are used to control the import process for Evercoast assets. As Evercoast's OBJ, material, and texture assets are imported by Unity, these scripts will ensure that they're properly configured.
+
+**Playback Scripts:**
+
+A variety of playback controller scripts.
+
+## Fundamentals:
+
+**Time in Unity:**
+
+Time in Unity is both plural (elapsed time, animation time, physics time, etc.) and non-linear. These times can scale internal to Unity to maintain frame-rate, deal with complex physics, or other many factors.
+
+Given that there is no unified singular concept of time, to maintain smooth playback while maintaining audio synchronization, we derive our volumetric playback frame based on the position of the read-head of the audio clip that's necessarily associated with each playback controller. Thus, we let Unity internally scale it's notion of time however it likes, and we simply lock onto the audio clip and stay in sync.
+
+There are many ways to maintain synchronization. However, we have found this mechanism to be markedly the simplest and most reliable -- under all playback regimes, from real-time to using Unity Recorder as an offline renderer. So, as you consider the playback controller described herein, please understand our reliance on an audio clip as the basis for our playback strategy.
+
+## Preparing RAW frames for Adobe Premiere
+
+Use refer to the above RAW Conversion section and use the Contact Sheet process to create contact sheets for the hero camera, or a subset of cameras where the face is clearly visible.
+
+In the end you'll have an image with the frame #'s burned into the bottom of the image place, as so:
+
+![diagram](documentation/contact.0000284.png)
