@@ -81,6 +81,10 @@ Depending on your where you've cloned `EvercoastOpenSource`, and whether that pa
 
 `~/EvercoastOpenSource/ec-parallel-montage.sh 1 2 100 ~/EvercoastOpenSource/ec-montage.sh 10x2 50`
 
+Watch Out For:
+
+If you receive contact sheets of the form `contact.0000235-0.png`, it indicates that your tiling leaves a remainder. Don't use tilings where `MxN < # of image sequences`. Should you have an odd number, e.g. `9` sequences, round up and use a tiling of `5x2`.
+
 **Example Output:**
 
 ![diagram](documentation/contact.0000327.png)
