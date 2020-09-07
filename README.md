@@ -181,7 +181,7 @@ Create a folder under `Assets` called `EVERCOAST CONTENT`. Then, under `EVERCOAS
 
 ![diagram](documentation/unity_obj_sequence.png)
 
-**Create AUDIO And Frames Sub-folders:**
+**Create AUDIO And FRAMES Sub-folders:**
 
 For each `EVERCOAST VOLUMETRIC` folder, create sub-folders `AUDIO` and `FRAMES`.
 
