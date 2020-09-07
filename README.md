@@ -175,8 +175,22 @@ Copy the `unity/EVERCOAST_SCRIPTS_Vx.y` folder into your Unity project under `As
 
 **OBJ Sequence(s):**
 
-Create a folder under `Assets` called `EVERCOAST CONTENT`. Then, under EVERCOAST CONTENT create a folder that begins with the prefix (or is named) `EVERCOAST VOLUMETRIC`, e.g. `EVERCOAST VOLUMETRIC - HERO`.
+Create a folder under `Assets` called `EVERCOAST CONTENT`. Then, under `EVERCOAST CONTENT` create a folder that begins with the prefix (or is named) `EVERCOAST VOLUMETRIC`, e.g. `EVERCOAST VOLUMETRIC - HERO`.
 
 *Note: The Editor and Playback scripts may refer to the above naming conventions, failing to adhere to these conventions may result in problems.*
 
 ![diagram](documentation/unity_obj_sequence.png)
+
+**Audio File:**
+
+For each `EVERCOAST VOLUMETRIC` folder, create subfolders `AUDIO` and `FRAMES`. Copy the synchronized audio file into `AUDIO`. You'll be notified that it has imported into Unity.
+
+**Frames:**
+
+Copy the synchronized OBJ sequence, that's been cut to match the audio file, into `FRAMES`.
+
+![diagram](documentation/file_browser_editorial.png)
+
+*Note: First, this may take several minutes.*
+
+*Pro Tip: It may be easier to quit Unity, copy the files, and then restart Unity, rather than doing this either from within Unity, or while Unity is open. Closing the application will avoid Unity incrementally detecting the presence of new files under `Assets`, and trying to import them, prior to the copy finishing.*
