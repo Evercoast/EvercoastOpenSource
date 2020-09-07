@@ -1,5 +1,10 @@
 ﻿//  Copyright (C) 2020 Evercoast Inc. All Rights Reserved.
 
+//
+// Simplest form of Evercoast's playback controller, recommend for getting started. This script will "Play on awake" and not need an
+// animation trigger. This scrip will also loop playback, according to the setting of the audio source.
+//
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;

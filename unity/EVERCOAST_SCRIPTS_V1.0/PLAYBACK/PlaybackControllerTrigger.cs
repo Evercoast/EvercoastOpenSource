@@ -1,5 +1,10 @@
 ﻿//  Copyright (C) 2020 Evercoast Inc. All Rights Reserved.
 
+//
+// Evercoast's playback controller for a triggered event. This script will trigger a single playback of the OBJ sequence when "clip_start" becomes
+// greater than zero. It is recommened that a Timeline animation is used to trigger "clip_start".
+//
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
