@@ -168,11 +168,15 @@ The labels that are burned into the bottom of each contact sheet frame are 1:1 t
 ## Installing Editor And Playback Scripts in Unity
 
 **Scripts:**
+
 Copy the `unity/EVERCOAST_SCRIPTS_Vx.y` folder into your Unity project under `Assets`.
 
 ![diagram](documentation/unity_scripts.png)
 
-**OBJ Sequence(s):***
+**OBJ Sequence(s):**
+
 Create a folder under `Assets` called `EVERCOAST CONTENT`. Then, under EVERCOAST CONTENT create a folder that begins with the prefix (or is named) `EVERCOAST VOLUMETRIC`, e.g. `EVERCOAST VOLUMETRIC - HERO`.
+
+*Note: The Editor and Playback scripts may refer to the above naming conventions, failing to adhere to these conventions may result in problems.*
 
 ![diagram](documentation/unity_obj_sequence.png)
