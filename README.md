@@ -205,7 +205,7 @@ Under the `Hierarchy` view, create an `Empty Game Object` and name or begins wit
 
 **Adding An Audio Source:**
 
-Use `Add Component` to add an `Audio Source` to the `Evercoast Controller`. Them, set the `Audio Clip` to the synchronized clip that was placed in the `AUDIO` folder.
+Use `Add Component` to add an `Audio Source` to the `Evercoast Controller`. Then, set the `Audio Clip` to the synchronized clip that was placed in the `AUDIO` folder.
 
 **Adding The Playback Controller:**
 
