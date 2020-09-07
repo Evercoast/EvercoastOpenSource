@@ -136,7 +136,7 @@ If you have not recorded an audio track for your volumetric content, this proces
 
 **Open The Image Sequence:**
 
-In your project in Premiere select Open, then use the file browser to locate the first frame of the image sequence of the contact sheets. Please ensure that `Image Sequence` is pressed in the lower left of the file browser dialog before pressing OK.
+In your project in Premiere select `Open`, then use the file browser to locate the first frame of the image sequence of the contact sheets. Please ensure that `Image Sequence` is pressed in the lower left of the file browser dialog before pressing OK.
 
 **Adjust The Image Sequence's FPS:**
 
@@ -201,7 +201,7 @@ Copy the synchronized OBJ sequence, that's been cut to match the audio file, int
 
 **Evercoast Controller:**
 
-Under the `Hierarchy` view, create an Empty Game Object and name or begins with the prefix `EVERCOAST`, e.g. `EVERCOAST - HERO`.
+Under the `Hierarchy` view, create an `Empty Game Object` and name or begins with the prefix `EVERCOAST`, e.g. `EVERCOAST - HERO`.
 
 **Adding An Audio Source:**
 
