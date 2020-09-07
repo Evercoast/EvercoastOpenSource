@@ -193,7 +193,7 @@ Copy the synchronized OBJ sequence, that's been cut to match the audio file, int
 
 ![diagram](documentation/file_browser_editorial.png)
 
-*Note: First, this may take several minutes.*
+*Note: This may take several minutes.*
 
 *Pro Tip: It may be easier to quit Unity, copy the files, and then restart Unity, rather than doing this either from within Unity, or while Unity is open. Closing the application will avoid Unity incrementally detecting the presence of new files under `Assets`, and trying to import them, prior to the copy finishing.*
 
@@ -211,7 +211,7 @@ Use `Add Component` to add an `Audio Source` to the `Evercoast Controller`. Them
 
 Use `Add Component` again to add Evercoast's `Playback Controller` script.
 
-*Note there are multiple types of playback controllers, please see internal documentation for usage.*
+*Note: There are multiple types of playback controllers, please see internal documentation for usage.*
 
 **See:**
 
@@ -237,7 +237,7 @@ Select all of the frames under the `EVERCOAST CONTROLLER` and tag them as `EVERC
 
 ![diagram](documentation/unity_frames_tagging.png)
 
-For further instruction, see [HERE].(https://docs.unity3d.com/Manual/Tags.html)
+For further instruction, see [HERE](https://docs.unity3d.com/Manual/Tags.html).
 
 
 **Setting A Display Frame:**
@@ -246,8 +246,36 @@ After creating game objects for the frames they'll all be visible, on top of one
 
 It is strongly recommended that a single hero frame, for instance the first frame in the sequence, is left as visible, and the rest of the frames are hidden. To do this simply select all of the frames, except your hero frame, and toggle their `active` state.
 
-For further instruction, see [HERE].(https://docs.unity3d.com/Manual/DeactivatingGameObjects.html)
+For further instruction, see [HERE](https://docs.unity3d.com/Manual/DeactivatingGameObjects.html).
 
 ## Press Play:
 
 Set up is now complete, upon pressing `Play` you'll see the OBJ sequence animate in the 3D Scene and Game views.
+
+## Recommended Tools:
+
+**Post Processing:**
+
+Post-processing layers in Unity is the most compelling way to make realistic scenes.
+
+For further instruction, see [HERE](https://docs.unity3d.com/Manual/PostProcessingOverview.html).
+
+**Timeline:**
+
+Earlier in this document we've mention that the time in Unity is a flexible concept. To create cinematic content with accurate in/out trigger points, for: starting or stopping volumetric playback, triggering visual or sound effects, etc. the timeline package should be used.
+
+There are other animation mechanisms available in Unity, but only the `Timeline` guarantees the frame accurate triggering of events.
+
+For further instruction, see [HERE](https://docs.unity3d.com/Packages/com.unity.timeline@1.4/manual/index.html).
+
+**Camera Path Animation:**
+
+Unity's `Cinemachine` package is the most effective resource to create complex camera animation paths that mimic real-world film equipment.
+
+For further instruction, see [HERE](https://docs.unity3d.com/Packages/com.unity.cinemachine@2.3/manual/index.html).
+
+**Offline Rendering:**
+
+To create offline renders, use the `Unity Recorder`. This is a relatively recent addition to Unity, and there are several such components available in the `Asset Store`, they are now redundant.
+
+For further instruction, see [HERE](https://docs.unity3d.com/Packages/com.unity.recorder@2.0/manual/index.html).
