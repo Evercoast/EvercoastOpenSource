@@ -253,7 +253,7 @@ Set up is now complete, upon pressing `Play` you'll see the OBJ sequence animate
 
 ## Recommended Tools:
 
-**Post Processing:**
+**Post-Processing:**
 
 `Post-processing` layers in Unity are the most compelling way to make realistic scenes.
 
