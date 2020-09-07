@@ -116,7 +116,7 @@ A variety of playback controller scripts.
 
 Time in Unity is both plural (elapsed time, animation time, physics time, etc.) and non-linear. These times can scale internal to Unity to maintain frame-rate, accommodate complex physics, or other many factors.
 
-Given that there is no unified singular concept of time, to maintain smooth playback while maintaining audio synchronization, we derive our volumetric playback frame based on the position of the read-head of the audio clip that's necessarily associated with each playback controller. Thus, we let Unity internally scale it's notion of time however it likes, and we simply lock onto the audio clip and stay in sync.
+Given that there is no unified singular concept of time, to maintain smooth playback while maintaining audio synchronization, we derive our volumetric playback frame based on the position of the read-head of the audio clip that's necessarily associated with each playback controller. Thus, we let Unity internally scale its notion of time however it likes, and we simply lock onto the audio clip and stay in sync.
 
 There are many ways to maintain synchronization. However, we have found this mechanism to be markedly the simplest and most reliable -- under all playback regimes, from real-time to using Unity Recorder as an offline renderer. So, as you consider the playback controller described herein, please understand maintaining audio-synchronization, for a long duration, under multiple playback mechanisms, as our primary design goal, and hence our reliance on an audio clip as the basis for playback strategy.
 
