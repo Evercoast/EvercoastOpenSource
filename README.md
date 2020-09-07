@@ -235,10 +235,9 @@ Drag and drop the frames so that they're they're children of the `EVERCOAST CONT
 
 Select all of the frames under the `EVERCOAST CONTROLLER` and tag them as `EVERCOAST VOLUMETRIC`. If the `EVERCOAST VOLUMETRIC` tag doesn't exist in your project, first use `Add tag...` to create it.
 
-![diagram](documentation/unity_frames_tagging.png)
-
 For further instruction, see [HERE](https://docs.unity3d.com/Manual/Tags.html).
 
+![diagram](documentation/unity_frames_tagging.png)
 
 **Setting A Display Frame:**
 
@@ -250,19 +249,19 @@ For further instruction, see [HERE](https://docs.unity3d.com/Manual/Deactivating
 
 ## Press Play:
 
-Set up is now complete, upon pressing `Play` you'll see the OBJ sequence animate in the 3D Scene and Game views.
+Set up is now complete, upon pressing `Play` you'll see the OBJ sequence animate in the `3D Scene` and `Game View`.
 
 ## Recommended Tools:
 
 **Post Processing:**
 
-Post-processing layers in Unity is the most compelling way to make realistic scenes.
+`Post-processing` layers in Unity are the most compelling way to make realistic scenes.
 
 For further instruction, see [HERE](https://docs.unity3d.com/Manual/PostProcessingOverview.html).
 
 **Timeline:**
 
-Earlier in this document we've mention that the time in Unity is a flexible concept. To create cinematic content with accurate in/out trigger points, for: starting or stopping volumetric playback, triggering visual or sound effects, etc. the timeline package should be used.
+Earlier in this document we've discussed that the notion of time in Unity is a flexible concept. To create cinematic content with accurate in/out trigger points, for: starting or stopping volumetric playback, triggering visual or sound effects, etc., the `Timeline` package should be used.
 
 There are other animation mechanisms available in Unity, but only the `Timeline` guarantees the frame accurate triggering of events.
 
@@ -276,6 +275,6 @@ For further instruction, see [HERE](https://docs.unity3d.com/Packages/com.unity.
 
 **Offline Rendering:**
 
-To create offline renders, use the `Unity Recorder`. This is a relatively recent addition to Unity, and there are several such components available in the `Asset Store`, they are now redundant.
+To create offline renders, use the `Unity Recorder`. This is a relatively recent addition to Unity, and there are several such components available in the `Asset Store`, those are now redundant.
 
 For further instruction, see [HERE](https://docs.unity3d.com/Packages/com.unity.recorder@2.0/manual/index.html).
