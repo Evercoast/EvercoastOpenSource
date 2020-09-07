@@ -167,13 +167,15 @@ The labels that are burned into the bottom of each contact sheet frame are 1:1 t
 
 ## Installing Editor And Playback Scripts in Unity
 
-**Scripts:**
-
 Copy the `unity/EVERCOAST_SCRIPTS_Vx.y` folder into your Unity project under `Assets`.
 
 ![diagram](documentation/unity_scripts.png)
 
+## Importing Audio and OBJ Sequences in Unity
+
 **OBJ Sequence(s):**
+
+**Asset Folders:**
 
 Create a folder under `Assets` called `EVERCOAST CONTENT`. Then, under `EVERCOAST CONTENT` create a folder that begins with the prefix (or is named) `EVERCOAST VOLUMETRIC`, e.g. `EVERCOAST VOLUMETRIC - HERO`.
 
@@ -183,7 +185,7 @@ Create a folder under `Assets` called `EVERCOAST CONTENT`. Then, under `EVERCOAS
 
 **Audio File:**
 
-For each `EVERCOAST VOLUMETRIC` folder, create subfolders `AUDIO` and `FRAMES`. Copy the synchronized audio file into `AUDIO`. You'll be notified that it has imported into Unity.
+For each `EVERCOAST VOLUMETRIC` folder, create sub-folders `AUDIO` and `FRAMES`. Copy the synchronized audio file into `AUDIO`. You'll be notified that it has imported into Unity.
 
 **Frames:**
 
@@ -194,3 +196,21 @@ Copy the synchronized OBJ sequence, that's been cut to match the audio file, int
 *Note: First, this may take several minutes.*
 
 *Pro Tip: It may be easier to quit Unity, copy the files, and then restart Unity, rather than doing this either from within Unity, or while Unity is open. Closing the application will avoid Unity incrementally detecting the presence of new files under `Assets`, and trying to import them, prior to the copy finishing.*
+
+## Adding Game Objects
+
+**Evercoast Controller:**
+
+Under the `Hierarchy` view, create an Empty Game Object and name or begins with the prefix `EVERCOAST`, e.g. `EVERCOAST - HERO`.
+
+**Adding An Audio Source:**
+
+Use `Add Component` to add an `Audio Source` to the `Evercoast Controller`. Them, set the `Audio Clip` to the synchronized clip that was placed in the `AUDIO` folder.
+
+**Adding The Playback Controller:**
+
+Use `Add Component` again to add Evercoast's `Playback Controller` script.
+
+*Note there are multiple types of playback controllers, please see internal documentation for usage.*
+
+![diagram](documentation/unity_controller_components.png)
