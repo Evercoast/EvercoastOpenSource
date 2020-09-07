@@ -173,8 +173,6 @@ Copy the `unity/EVERCOAST_SCRIPTS_Vx.y` folder into your Unity project under `As
 
 ## Importing Audio and OBJ Sequences in Unity
 
-**OBJ Sequence(s):**
-
 **Asset Folders:**
 
 Create a folder under `Assets` called `EVERCOAST CONTENT`. Then, under `EVERCOAST CONTENT` create a folder that begins with the prefix (or is named) `EVERCOAST VOLUMETRIC`, e.g. `EVERCOAST VOLUMETRIC - HERO`.
