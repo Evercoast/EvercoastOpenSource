@@ -267,7 +267,7 @@ There are other animation mechanisms available in Unity, but only the `Timeline`
 
 For further instruction, see [HERE](https://docs.unity3d.com/Packages/com.unity.timeline@1.4/manual/index.html).
 
-**Camera Path Animation:**
+**Cinemachine:**
 
 Unity's `Cinemachine` package is the most effective resource to create complex camera animation paths that mimic real-world film equipment.
 
