@@ -197,7 +197,7 @@ Copy the synchronized OBJ sequence, that's been cut to match the audio file, int
 
 *Pro Tip: It may be easier to quit Unity, copy the files, and then restart Unity, rather than doing this either from within Unity, or while Unity is open. Closing the application will avoid Unity incrementally detecting the presence of new files under `Assets`, and trying to import them, prior to the copy finishing.*
 
-## Adding Game Objects
+## The Controller Game Object
 
 **Evercoast Controller:**
 
@@ -213,4 +213,41 @@ Use `Add Component` again to add Evercoast's `Playback Controller` script.
 
 *Note there are multiple types of playback controllers, please see internal documentation for usage.*
 
+**See:**
+
 ![diagram](documentation/unity_controller_components.png)
+
+## Frames:
+
+**Select The Frames:**
+
+Under `Assets/EVERCOAST VOLUMETRIC/FRAMES` select the OBJ sequence geometry.
+
+![diagram](documentation/unity_frames_1.png)
+
+**Drag The Frames Into The Hierarchy:**
+
+Drag and drop the frames so that they're they're children of the `EVERCOAST CONTROLLER`.
+
+![diagram](documentation/unity_frames_2.png)
+
+**Tagging the Frames:**
+
+Select all of the frames under the `EVERCOAST CONTROLLER` and tag them as `EVERCOAST VOLUMETRIC`. If the `EVERCOAST VOLUMETRIC` tag doesn't exist in your project, first use `Add tag...` to create it.
+
+![diagram](documentation/unity_frames_tagging.png)
+
+For further instruction, see [HERE].(https://docs.unity3d.com/Manual/Tags.html)
+
+
+**Setting A Display Frame:**
+
+After creating game objects for the frames they'll all be visible, on top of one another. This not only decreases rendering performance, but makes working with the content all but impossible.
+
+It is strongly recommended that a single hero frame, for instance the first frame in the sequence, is left as visible, and the rest of the frames are hidden. To do this simply select all of the frames, except your hero frame, and toggle their `active` state.
+
+For further instruction, see [HERE].(https://docs.unity3d.com/Manual/DeactivatingGameObjects.html)
+
+## Press Play:
+
+Set up is now complete, upon pressing `Play` you'll see the OBJ sequence animate in the 3D Scene and Game views.
