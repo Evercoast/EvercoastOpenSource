@@ -181,9 +181,13 @@ Create a folder under `Assets` called `EVERCOAST CONTENT`. Then, under `EVERCOAS
 
 ![diagram](documentation/unity_obj_sequence.png)
 
+**Create AUDIO And Frames Sub-folders:**
+
+For each `EVERCOAST VOLUMETRIC` folder, create sub-folders `AUDIO` and `FRAMES`.
+
 **Audio File:**
 
-For each `EVERCOAST VOLUMETRIC` folder, create sub-folders `AUDIO` and `FRAMES`. Copy the synchronized audio file into `AUDIO`. You'll be notified that it has imported into Unity.
+Copy the synchronized audio file into `AUDIO`. You'll be notified that it has imported into Unity.
 
 **Frames:**
 
