@@ -130,7 +130,7 @@ In the end you'll have an image with the frame filenames, and hence the frame nu
 
 ## Synchronizing Audio In Adobe Premiere
 
-**Having An Audio File Is a Must:**
+**Having An Audio File Is A Must:**
 
 If you have not recorded an audio track for your volumetric content, this process is still essential. Please substitute any audio track, e.g. your favorite song.
 
