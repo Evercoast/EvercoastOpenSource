@@ -164,3 +164,15 @@ Export a WAV file. On the export dialog reset the timecode to `00:00:00`.
 **Cutting The OBJ Sequence:**
 
 The labels that are burned into the bottom of each contact sheet frame are 1:1 to the OBJ sequence files. From here trim your OBJ sequence to exactly what is used in your editorial from Premiere, either by deleting unneeded files, or by duplicating the sub-range into a separate folder.
+
+## Installing Editor And Playback Scripts in Unity
+
+**Scripts:**
+Copy the `unity/EVERCOAST_SCRIPTS_Vx.y` folder into your Unity project under `Assets`.
+
+![diagram](documentation/unity_scripts.png)
+
+**OBJ Sequence(s):***
+Create a folder under `Assets` called `EVERCOAST CONTENT`. Then, under EVERCOAST CONTENT create a folder that begins with the prefix (or is named) `EVERCOAST VOLUMETRIC`, e.g. `EVERCOAST VOLUMETRIC - HERO`.
+
+![diagram](documentation/unity_obj_sequence.png)
