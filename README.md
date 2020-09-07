@@ -273,7 +273,7 @@ Unity's `Cinemachine` package is the most effective resource to create complex c
 
 For further instruction, see [HERE](https://docs.unity3d.com/Packages/com.unity.cinemachine@2.3/manual/index.html).
 
-**Offline Rendering:**
+**Unity Recorder:**
 
 To create offline renders, use the `Unity Recorder`. This is a relatively recent addition to Unity, and there are several such components available in the `Asset Store`, those are now redundant.
 
