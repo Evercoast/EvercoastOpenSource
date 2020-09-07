@@ -99,7 +99,7 @@ Download DJV [HERE](https://darbyjohnston.github.io/DJV/download.html).
 
 # Unity
 
-C# Editor and Playback scripts for OBJ sequences for playback in Unity.
+C# `Editor` and `Playback` scripts for OBJ sequences for playback in Unity.
 
 ## Types of Scripts:
 **Editor Scripts:**
@@ -114,53 +114,53 @@ A variety of playback controller scripts.
 
 **Time In Unity:**
 
-Time in Unity is both plural (elapsed time, animation time, physics time, etc.) and non-linear. These times can scale internal to Unity to maintain frame-rate, deal with complex physics, or other many factors.
+Time in Unity is both plural (elapsed time, animation time, physics time, etc.) and non-linear. These times can scale internal to Unity to maintain frame-rate, accommodate complex physics, or other many factors.
 
 Given that there is no unified singular concept of time, to maintain smooth playback while maintaining audio synchronization, we derive our volumetric playback frame based on the position of the read-head of the audio clip that's necessarily associated with each playback controller. Thus, we let Unity internally scale it's notion of time however it likes, and we simply lock onto the audio clip and stay in sync.
 
-There are many ways to maintain synchronization. However, we have found this mechanism to be markedly the simplest and most reliable -- under all playback regimes, from real-time to using Unity Recorder as an offline renderer. So, as you consider the playback controller described herein, please understand our reliance on an audio clip as the basis for our playback strategy.
+There are many ways to maintain synchronization. However, we have found this mechanism to be markedly the simplest and most reliable -- under all playback regimes, from real-time to using Unity Recorder as an offline renderer. So, as you consider the playback controller described herein, please understand maintaining audio-synchronization, for a long duration, under multiple playback mechanisms, as our primary design goal, and hence our reliance on an audio clip as the basis for playback strategy.
 
-## Preparing RAW frames for Adobe Premiere
+## Preparing RAW Frames For Adobe Premiere
 
-Use refer to the above RAW Conversion section and use the Contact Sheet process to create contact sheets for the hero camera, or a subset of cameras where the face is clearly visible.
+Refer to the above `RAW Conversion` section and `Making Contact Sheets` process to create contact sheets for the hero camera, or a subset of cameras where the face is clearly visible.
 
-In the end you'll have an image with the frame #'s burned into the bottom of the image place, as so:
+In the end you'll have an image with the frame filenames, and hence the frame numbers, burned into the bottom of the image place, as so:
 
 ![diagram](documentation/contact.0000284.png)
 
-## Synchronizing Audio in Adobe Premiere
+## Synchronizing Audio In Adobe Premiere
 
 **Note:**
 
-If you have not recorded an audio track for your volumetric content, this process is still essential. Please substitute any other MP3.
+If you have not recorded an audio track for your volumetric content, this process is still essential. Please substitute any audio track, e.g. your favorite song.
 
 **Open The Image Sequence:**
 
-In your project in Premiere select Open, then use the file browser to locate the first frame of the image sequence of the contact sheets. Please ensure that "Image Sequence" is pressed in the lower left on the browser before pressing OK.
+In your project in Premiere select Open, then use the file browser to locate the first frame of the image sequence of the contact sheets. Please ensure that `Image Sequence` is pressed in the lower left of the file browser dialog before pressing OK.
 
 **Adjust The Image Sequence's FPS:**
 
-Right click on the source audio and follow the “Modify Clip / Interpret Footage” menu. Set the FPS of the clip to the FPS used at record time in Mavericks.
+Right click on the image sequence and follow the `Modify Clip / Interpret Footage` menu. Set the FPS of the clip to the FPS used at record time in Mavericks.
 
 ![diagram](documentation/premiere_interpret_footage.png)
 
-This must be done before setting any markers, or syncing tracks.
+*Note: Modify Clip must be done before setting any markers, or syncing tracks.*
 
-**Sync The Audio:**
+**Synchronize The Audio:**
 
-If you're synchronizing an audio track, line it up in Premiere.
+Synchronize the audio track to the video track.
 
 **Cut The Track:**
 
-Use the Cut Tool to trim any extra frames off of the beginning or end of the clip, so that you have your final editorial cut.
+Use the `Cut Tool` to trim any excess frames from the beginning or end of the clip. This is your final `editorial` cut.
 
 ![diagram](documentation/premiere_cut.png)
 
 **Export An Audio File:**
 
-Export a WAV file. On the export dialog reset the timecode to 00:00:00.
+Export a WAV file. On the export dialog reset the timecode to `00:00:00`.
 
 
 **Cutting The OBJ Sequence:**
 
-The labels that are burned into the bottom of each contact sheet frame are 1:1 to the OBJ sequence files. From here trim your OBJ sequence to exactly what is used in your editorial in Premiere.
+The labels that are burned into the bottom of each contact sheet frame are 1:1 to the OBJ sequence files. From here trim your OBJ sequence to exactly what is used in your editorial from Premiere, either by deleting unneeded files, or by duplicating the sub-range into a separate folder.
