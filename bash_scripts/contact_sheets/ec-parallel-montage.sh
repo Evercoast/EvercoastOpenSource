@@ -11,9 +11,9 @@
 # 50            = result image scaling
 
 for i in $(seq $1 $2 $3); do
-	echo $4 $5 $6 $i contact.`printf %07d $i`.png >> .ec_montage
+	echo $4 $5 $6 $i contact.`printf %07d $i`.png >> .ec_parallel_montage
 done
 
-parallel --eta < .ec_montage
+parallel --eta < .ec_parallel_montage
 
-rm .ec_montage
+rm .ec_parallel_montage
