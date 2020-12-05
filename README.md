@@ -17,6 +17,7 @@ Looking for Evercoast, find us at: www.evercoast.com!
 **Imagemagick & Montage:**
 
 `sudo apt install imagemagick`
+
 `sudo apt-get install montage`
 
 **Note:**
