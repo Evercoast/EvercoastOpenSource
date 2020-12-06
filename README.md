@@ -10,7 +10,7 @@ Looking for Evercoast, find us at: www.evercoast.com!
 
 `sudo apt install parallel`
 
-(Legacy) If parallel complains about citations (you'll know it when you see it), use the following command to silence the messages:
+(Legacy) If parallel complains about citations (if it happens, you'll know it when you see it), use the following command to silence the messages:
 
 `parallel --bibtex will cite`
 
