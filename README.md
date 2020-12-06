@@ -32,6 +32,8 @@ Depending on your GIT client, you may need to `chmod +x` the BASH scripts descri
 
 `ec-convert-raw-color-1280x800.sh` (D455)
 
+`ec-convert-raw-infrared-1280x720.sh` (D415 | D455)
+
 `ec-convert-raw-depth-1280x720.sh` (D415 | D455)
 
 ## Purpose:
