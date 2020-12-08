@@ -10,11 +10,13 @@ Looking for Evercoast, find us at: www.evercoast.com!
 
 `sudo apt install parallel`
 
-To silence the citation banner:
+(Legacy) If parallel complains about citations (if it happens, you'll know it when you see it), use the following command to silence the messages:
 
 `parallel --bibtex will cite`
 
-**Montage:**
+**Imagemagick & Montage:**
+
+`sudo apt install imagemagick`
 
 `sudo apt-get install montage`
 
@@ -29,6 +31,8 @@ Depending on your GIT client, you may need to `chmod +x` the BASH scripts descri
 `ec-convert-raw-color-1280x720.sh` (D415)
 
 `ec-convert-raw-color-1280x800.sh` (D455)
+
+`ec-convert-raw-infrared-1280x720.sh` (D415 | D455)
 
 `ec-convert-raw-depth-1280x720.sh` (D415 | D455)
 
