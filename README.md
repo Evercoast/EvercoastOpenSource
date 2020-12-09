@@ -97,7 +97,7 @@ If you receive contact sheets of the form `contact.0000235-0.png`, it indicates 
 
 ![diagram](documentation/contact.0000327.png)
 
-# Viewing Images
+# Viewing Image Sequences
 
 We recommend DJV as a free to use review tool, which is provided under a BSD-style license.
 
