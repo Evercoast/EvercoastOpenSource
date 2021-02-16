@@ -21,6 +21,11 @@ for i in $(seq $1 1 $2); do
 		infrared_frame_out=$4-INFRARED.`printf %07d $i`.raw
 		echo mv $infrared_frame_in $infrared_frame_out >> .ec_reg_renumber_device
 	fi
+	color_frame_in=$3-COLOR.`printf %07d $i`.raw
+	if [ -f $color_frame_in ]; then
+		color_frame_out=$4-COLOR.`printf %07d $i`.raw
+		echo mv $color_frame_in $color_frame_out >> .ec_reg_renumber_device
+	fi
 done
 
 parallel --eta < .ec_reg_renumber_device
