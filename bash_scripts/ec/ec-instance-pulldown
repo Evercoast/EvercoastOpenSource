@@ -1,0 +1,22 @@
+#!/bin/bash
+
+scp -r -i ~/.ssh/evercoast-dev-key-pair.pem ubuntu@$1:/home/ubuntu/$2/meta_data
+scp -r -i ~/.ssh/evercoast-dev-key-pair.pem ubuntu@$1:/home/ubuntu/$2/obj_clean_decimate
+scp -r -i ~/.ssh/evercoast-dev-key-pair.pem ubuntu@$1:/home/ubuntu/$2/obj_clean_slice
+scp -r -i ~/.ssh/evercoast-dev-key-pair.pem ubuntu@$1:/home/ubuntu/$2/obj_smooth
+scp -r -i ~/.ssh/evercoast-dev-key-pair.pem ubuntu@$1:/home/ubuntu/$2/ply_deproject_beauty
+scp -r -i ~/.ssh/evercoast-dev-key-pair.pem ubuntu@$1:/home/ubuntu/$2/ply_deproject_raw
+scp -r -i ~/.ssh/evercoast-dev-key-pair.pem ubuntu@$1:/home/ubuntu/$2/ply_obey
+scp -r -i ~/.ssh/evercoast-dev-key-pair.pem ubuntu@$1:/home/ubuntu/$2/ply_recon
+scp -r -i ~/.ssh/evercoast-dev-key-pair.pem ubuntu@$1:/home/ubuntu/$2/ply_recon_original
+scp -r -i ~/.ssh/evercoast-dev-key-pair.pem ubuntu@$1:/home/ubuntu/$2/ply_truth
+scp -r -i ~/.ssh/evercoast-dev-key-pair.pem ubuntu@$1:/home/ubuntu/$2/ply_xform
+scp -r -i ~/.ssh/evercoast-dev-key-pair.pem ubuntu@$1:/home/ubuntu/$2/png_color_chromakey
+scp -r -i ~/.ssh/evercoast-dev-key-pair.pem ubuntu@$1:/home/ubuntu/$2/png_color_delight
+scp -r -i ~/.ssh/evercoast-dev-key-pair.pem ubuntu@$1:/home/ubuntu/$2/png_color_despill
+scp -r -i ~/.ssh/evercoast-dev-key-pair.pem ubuntu@$1:/home/ubuntu/$2/png_color_mask
+scp -r -i ~/.ssh/evercoast-dev-key-pair.pem ubuntu@$1:/home/ubuntu/$2/png_depth_beauty
+scp -r -i ~/.ssh/evercoast-dev-key-pair.pem ubuntu@$1:/home/ubuntu/$2/png_depth_beauty_hist
+scp -r -i ~/.ssh/evercoast-dev-key-pair.pem ubuntu@$1:/home/ubuntu/$2/png_depth_debug_2d
+scp -r -i ~/.ssh/evercoast-dev-key-pair.pem ubuntu@$1:/home/ubuntu/$2/png_depth_raw
+scp -r -i ~/.ssh/evercoast-dev-key-pair.pem ubuntu@$1:/home/ubuntu/$2/raw_depth_temporal
