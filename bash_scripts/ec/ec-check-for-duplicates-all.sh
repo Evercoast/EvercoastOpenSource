@@ -24,4 +24,4 @@ while read line; do
 
 done < .ec-check-for-duplicates-all
 
-# rm -f .ec-check-for-duplicates-all
+ rm -f .ec-check-for-duplicates-all
